@@ -43,14 +43,14 @@ localhost:8080
 
 -> cars/add - **[PUT]** | Add a car by sending a JSON file
 
--> cars/{brand} - **[GET]** -> (ex. - /cars/honda) | Find all cars based of the brand name.
+-> cars/{brand} - **[GET]** -> (ex. - /cars/honda) | Find all cars based on the brand name.
 
 -> cars/export - **[GET]** | Export database contents as JSON
 
 **SWAGGER**
 
 -> swagger-ui/index.html# | Access swagger from your browser, after launching the application.
-## JSON example
+## JSON Example
 ```json
 {
     "brand": "BMW",
