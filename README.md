@@ -28,9 +28,9 @@ mvn spring-boot:run
 ```
 **OR**
 
-1.Clone the repository to your local computer;
+1. Clone the repository to your local computer;
 
-2.Start the application from your IDE of choice.
+2. Start the application from your IDE of choice.
 ## Endpoints
 
 /cars/import - **[PUT]** | Import database contents as JSON (Deletes previous data)
