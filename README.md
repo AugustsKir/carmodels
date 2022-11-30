@@ -31,6 +31,12 @@ mvn spring-boot:run
 1. Clone the repository to your local computer;
 
 2. Start the application from your IDE of choice.
+
+---
+**If the application is running on your machine, you can access it by:**
+```
+localhost:8080
+```
 ## Endpoints
 
 /cars/import - **[PUT]** | Import database contents as JSON (Deletes previous data)
@@ -40,6 +46,10 @@ mvn spring-boot:run
 /cars/{brand} - **[GET]** -> (ex. - /cars/honda) | Find all cars based of the brand name.
 
 /cars/export - **[GET]** | Export database contents as JSON
+
+**SWAGGER**
+
+/swagger-ui/index.html#/ | Access swagger from your browser, after launching the application.
 ## JSON type format
 ```json
 {
@@ -50,6 +60,7 @@ mvn spring-boot:run
     "regNum": "KO4321"
 }
 ```
+
 
 
 
