@@ -50,7 +50,7 @@ localhost:8080
 **SWAGGER**
 
 -> swagger-ui/index.html# | Access swagger from your browser, after launching the application.
-## JSON type format
+## JSON example
 ```json
 {
     "brand": "BMW",
