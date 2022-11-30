@@ -39,17 +39,17 @@ localhost:8080
 ```
 ## Endpoints
 
-/cars/import - **[PUT]** | Import database contents as JSON (Deletes previous data)
+-> cars/import - **[PUT]** | Import database contents as JSON (Deletes previous data)
 
-/cars/add - **[PUT]** | Add a car by sending a JSON file
+-> cars/add - **[PUT]** | Add a car by sending a JSON file
 
-/cars/{brand} - **[GET]** -> (ex. - /cars/honda) | Find all cars based of the brand name.
+-> cars/{brand} - **[GET]** -> (ex. - /cars/honda) | Find all cars based of the brand name.
 
-/cars/export - **[GET]** | Export database contents as JSON
+-> cars/export - **[GET]** | Export database contents as JSON
 
 **SWAGGER**
 
-/swagger-ui/index.html#/ | Access swagger from your browser, after launching the application.
+-> swagger-ui/index.html# | Access swagger from your browser, after launching the application.
 ## JSON type format
 ```json
 {
