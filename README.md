@@ -24,7 +24,7 @@ password: admin
 
 
 ```bash
-mvn spring-boot:run
+./mvnw spring-boot:run
 ```
 **OR**
 
@@ -37,6 +37,8 @@ mvn spring-boot:run
 ```
 localhost:8080
 ```
+---
+**DISCLAIMER**: To stop the application, press CTRL + C
 ## Endpoints
 
 -> cars/import - **[PUT]** | Import database contents as JSON (Deletes previous data)
