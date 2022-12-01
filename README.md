@@ -38,7 +38,7 @@ password: admin
 localhost:8080
 ```
 ---
-**DISCLAIMER**: To stop the application, press CTRL + C
+**DISCLAIMER:** To stop the application in the terminal, press CTRL + C
 ## Endpoints
 
 -> cars/import - **[PUT]** | Import database contents as JSON (Deletes previous data)
