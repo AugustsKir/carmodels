@@ -17,15 +17,13 @@ public class CarService {
 
 
     public Car addCar(Car car) {
-        if (carRepository.findAll().stream().anyMatch(c -> c.getVin().equals(car.getVin()))) {
-            throw new ResponseStatusException(HttpStatus.CONFLICT, "Car with the same VIN number already exists!");
-        } else if (carRepository.findAll().stream().anyMatch(c -> c.getRegNum().equals(car.getRegNum()))) {
-            throw new ResponseStatusException(HttpStatus.CONFLICT, "Car with the same registration number exists!");
+        if (!carRepository.findCarsByRegNum(car.getRegNum()).isEmpty() || !carRepository.findCarsByVin(car.getVin()).isEmpty()) {
+            throw new ResponseStatusException(HttpStatus.CONFLICT);
         } else {
             return carRepository.save(car);
         }
-
     }
+
 
     public List<Car> findCars(String reqBrand) {
         List<Car> output = carRepository.findAll().stream().filter(car -> car.getBrand().equalsIgnoreCase(reqBrand)).toList();
